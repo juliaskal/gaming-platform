@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    line-height: 187%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26, 14, 1 ,1) 100%);
+    width: 100%;
+}
+
+.header-container {
+    width:  90%;
+    margin: 0 auto;
+}
+
+.container {
+    /* width:  1200px; */
+    width:  80%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo,
+footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a, .email .block button {
+    background: #FA9021;
+    padding: 12px 35px;
+    transition: all 500ms ease;
+    border-radius: 5px;
+}
+
+header nav ul li.btn a:hover, .email .block button:hover {
+    background: #d56220;
+}
+
+.hero {
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #E87D0E;
+    line-height: 155%;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 155%;
+    margin: 20px 0;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 200%;
+    margin-bottom: 40px;;
+}
+
+.hero--info .btn {
+    background: #FA8305;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img {
+    position: absolute;
+    top: -150px;
+    right: -100px;
+}
+
+/* Секция с играми ------------------------- */
+
+.trending h3 {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 185%;
+    margin: 57px 0;
+}
+
+.see-all {
+    background: #FFFFFF11;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    float: right;
+    transition: all 500ms ease;
+}
+
+.see-all:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 130px;
+}
+
+.games span {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+.games span img {
+    padding-right: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.big-text {
+    width: 826px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 187%;
+}
+
+.banner {
+    padding-top: 67px;
+    padding-bottom: 157px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 187%;
+    padding-bottom: 32px;
+}
+
+.banner p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 46px;
+    width: 545px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* Блок features -------------------------- */
+
+.features {
+    background: url(../img/BG.png) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 93px;
+    padding-bottom: 40px;
+}
+
+.text {
+    width: 826px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 99px;
+}
+
+.features h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 187%;
+    padding-bottom: 25px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+
+.features .info .block img {
+    margin-bottom: 15px;
+}
+
+.features .info .block p {
+    margin-bottom: 25px;
+}
+
+/* Блок Projects -------------------- */
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px; 
+}
+
+.projects .see-all {
+    float: none;
+    width: 70px;
+    text-align: center;
+    margin: auto;
+    margin-top: 47px;
+}
+
+/* Блок подписки на рассылку ----------------- */
+
+.email {
+    padding-bottom: 120px;
+}
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 30px;
+    line-height: 187%;
+}
+
+.email .block {
+    background: #FFFFFF11;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 187%;
+}
+
+.email .block p {
+    width: 500px;
+}
+
+.email .block input {
+    background: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 15px;
+    width: 380px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 20px 25px;
+    position: relative;
+    right: -90px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder {
+    color: #898989;
+}
+
+.email .block button {
+    cursor: pointer;
+    border: 0;
+    padding: 16px 23px;
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+    left: -21px;
+    z-index: 2;
+}
+
+/* Footer ----------------------------------- */
+
+footer {
+    background: #000;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #898989;
+}
+
+footer > p {
+    text-align: center;
+}
